@@ -1,11 +1,11 @@
-name: Create From Template
-  on: create
-  jobs:
-    npm-update:
-      runs-on: macos-latest
-      if: github.ref == 'refs/heads/main'
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-node@v1
-        - name: NPM Update
-        - run: npm init -y
+name: create-from-template
+on: create
+jobs:
+  npm-update:
+    if: github.ref == 'refs/heads/main'
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - name: NPM Update
+      - run: npm init -y
