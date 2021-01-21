@@ -1,10 +1,10 @@
 name: learn-github-actions
 on: [create]
 jobs:
-  check-bats-version:
+  install-react:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - run: npm install -g bats
-      - run: bats -v
+      - run: npm init -y
+      - run: npm install react --save
