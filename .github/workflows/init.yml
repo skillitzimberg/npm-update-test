@@ -1,11 +1,10 @@
-name: create-from-template
-on: create
+name: learn-github-actions
+on: [create]
 jobs:
-  npm-update:
-    if: github.ref == 'refs/heads/main'
-    runs-on: macos-latest
+  check-bats-version:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - run: npm init -y
-      - run: npm install react
+      - run: npm install -g bats
+      - run: bats -v
