@@ -8,4 +8,4 @@ name: Create From Template
         - uses: actions/checkout@v2
         - uses: actions/setup-node@v1
         - name: NPM Update
-        - run: npm update
+        - run: npm init -y
