@@ -10,6 +10,6 @@ jobs:
       - run: npm init -y
       - run: npm install react --save
       - uses: EndBug/add-and-commit@v7.0.0
-          with:
-            add: "."
-            push: true
+        with:
+          add: "."
+          push: true
