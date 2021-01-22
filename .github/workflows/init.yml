@@ -6,9 +6,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
+      - uses: actions-x/commit@v1
       - run: npm init -y
       - run: npm install react --save
       - uses: EndBug/add-and-commit@v7.0.0
         with:
-          add: "."
+          add: '.'
           push: true
