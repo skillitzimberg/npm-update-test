@@ -9,6 +9,7 @@ jobs:
       - uses: actions-x/commit@v1
       - run: npm init -y
       - run: npm install react --save
-      - run: git add -A
-      - run: git commit -m "committing updates"
-        
+      - uses: EndBug/add-and-commit@v7.0.0
+          with:
+            add: "."
+            push: true
