@@ -1,7 +1,7 @@
-name: learn-github-actions
+name: update-deps
 on: [create]
 jobs:
-  install-react:
+  npm-update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
