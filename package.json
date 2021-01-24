@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/skillitzimberg/npm-update-test#readme",
   "dependencies": {
-    "react": "^16.12.0"
+    "react": "^16.14.0"
   }
 }
