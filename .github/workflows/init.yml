@@ -11,6 +11,7 @@ jobs:
       - run: npm install
       - run: npm update
       - run: git rm -r --cached .github
+      - run: rm -rf
       - uses: EndBug/add-and-commit@v7.0.0
         with:
           add: '.'
