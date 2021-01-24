@@ -10,6 +10,7 @@ jobs:
           node-version: '14'
       - run: npm install
       - run: npm update
+      - run: git rm -r --cached .github
       - uses: EndBug/add-and-commit@v7.0.0
         with:
           add: '.'
