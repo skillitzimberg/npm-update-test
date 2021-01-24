@@ -8,9 +8,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - run: node -v
-      - run: npm -v
-      - run: npm update --save
+      - run: npm install
+      - run: npm update
       - uses: EndBug/add-and-commit@v7.0.0
         with:
           add: '.'
